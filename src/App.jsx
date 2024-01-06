@@ -6,6 +6,7 @@ import { Banner } from './components/Banner';
 import { Cards, Products } from './components/Cards';
 import { Carosel } from './components/Carosel';
 import { Footer } from './components/Footer';
+import ProductDetails from './components/ProductDetails';
 
 const App = () => {
 
@@ -19,6 +20,7 @@ const App = () => {
     <Cards />
     <Products />
     <Footer />
+    {/* <ProductDetails /> */}
     </>
   )
 }

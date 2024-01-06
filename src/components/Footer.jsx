@@ -40,12 +40,12 @@ const Footer = () => {
                     </div>
                     <div className="row" id="credit">
                         <div className="col">
-                            <p>Created By <a href>Syed Rafay</a> ©2024 | All Rights Reserved</p>
+                            <p>Created By <a href="github.com/rafay637">Syed Rafay</a> ©2024 | All Rights Reserved</p>
                         </div>
                     </div>
                 </div>
             </footer>
-            col-md-3      </>
+        </>
     );
 };
 
