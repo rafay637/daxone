@@ -6,21 +6,21 @@ import { Banner } from './components/Banner';
 import { Cards, Products } from './components/Cards';
 import { Carosel } from './components/Carosel';
 import { Footer } from './components/Footer';
-import ProductDetails from './components/ProductDetails';
+// import ProductDetails from './components/ProductDetails';
 
 const App = () => {
 
   return (
     <>
-    <Navbar />
-    <Slider />
-    <Banner />
-    <Cards />
-    <Carosel />
-    <Cards />
-    <Products />
-    <Footer />
-    {/* <ProductDetails /> */}
+      <Navbar />
+      <Slider />
+      <Banner />
+      <Cards />
+      <Carosel />
+      <Cards />
+      <Products />
+      <Footer />
+      {/* <ProductDetails /> */}
     </>
   )
 }

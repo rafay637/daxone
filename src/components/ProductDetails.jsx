@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { Button } from './Button';
-import { Navbar } from './Navbar';
+// import { Navbar } from './Navbar';
+import { Products } from './Cards';
+// import { Footer } from './Footer';
 
 const ProductDetails = (props) => {
     const [count, setCount] = useState(0);
@@ -39,6 +41,8 @@ const ProductDetails = (props) => {
                     </div>
                 </div>
             </section>
+            <Products />
+            {/* <Footer /> */}
         </>
     );
 };
