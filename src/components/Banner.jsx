@@ -14,7 +14,9 @@ const Banner = () => {
                 </div>
             </div>
 
-            <Text heading="Best Sell" />
+            <div className="banner-baba">
+                <Text heading="Best Sell" />
+            </div>
         </>
     );
 };

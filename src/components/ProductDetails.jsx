@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import { Button } from './Button';
-// import { Navbar } from './Navbar';
-import { Products } from './Cards';
-// import { Footer } from './Footer';
+import { Navbar } from './Navbar';
+import { Footer } from './Footer';
 
 const ProductDetails = (props) => {
     const [count, setCount] = useState(0);
@@ -13,38 +12,40 @@ const ProductDetails = (props) => {
 
     return (
         <>
-            {/* <Navbar /> */}
+            <Navbar />
             <div className="cardheading">
                 <h1><strong>Product Deatils Page</strong></h1>
                 <p>Home / <span>Product Details</span></p>
             </div>
-            <section class="section product-detail">{props.id}
+            <section class="section product-detail">
                 <div class="details container">
                     <div class="left image-container">
                         <div class="main">
-                            <img src={props.img} id='zoom' alt="Details" />
+                            <img src={props.image_url} id='zoom' alt="Details" />
                         </div>
                     </div>
                     <div class="right">
-                        <h1><strong>Brown Easy Sport Chair By Daxone</strong></h1>
-                        <div class="price">$210</div>
+                        <h1><strong>{props.heading}</strong></h1>
+                        <div class="price">{props.price}</div>
                         <form class="form">
                             <p className='Bordering' onClick={update_value}>{count}</p>
                             <Button btn="Add To Cart" />
                         </form>
                         <h3><strong>PRODUCT DETAILS</strong></h3>
-                        <p>
-                            Men's T-shirts are versatile wardrobe staples, offering comfort and style in a variety of colors, patterns,
-                            and fabrics. Whether worn casually with jeans or dressed up under a blazer, these garments effortlessly blend
-                            comfort with fashion.
-                        </p>
+                        <p>{props.description}</p>
                     </div>
                 </div>
             </section>
-            <Products />
-            {/* <Footer /> */}
+            <div className="handle">
+                <div className="row">
+                    <div className="handle-btn">
+                        <button className='botn' onClick={props.go_back_handle}>See All</button>
+                    </div>
+                </div>
+            </div>
+            <Footer />
         </>
     );
 };
 
-export default ProductDetails;
+export { ProductDetails };

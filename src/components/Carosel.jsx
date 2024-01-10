@@ -19,7 +19,7 @@ const Carosel = () => {
                     </div>
                 </div>
 
-                <div className="banner-texting">
+                <div className="carosel-texting">
                 <div className="row">
                     <div>
                         <h3><strong>All Products</strong></h3>

@@ -249,18 +249,28 @@ html {
   justify-content: space-evenly;
 }
 
+.banner-baba{
+  margin-bottom: 7rem;
+}
+
 /* ------------ banner end -------------- */
 
 
 /* ------------ cards stert -------------- */
 
-.nakro {
-  margin: 30px;
-  padding: 15px;
+.Products {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.cards:hover {
-  box-shadow: 0 0.5rem 1rem 1rem rgba(0, 0, 0, 0.1);
+.nakro {
+  /* border: 1px solid black; */
+  margin-left: 3.3rem;
+  margin-bottom: 3rem;
+
+  &:hover {
+    box-shadow: 0 0.5rem 1rem 1rem rgba(0, 0, 0, 0.1);
+  }
 }
 
 .cards img {
@@ -270,6 +280,7 @@ html {
 }
 
 .cards .title {
+  width: 277px;
   color: #666;
   font-size: 2rem;
   margin-top: 10px;
@@ -277,6 +288,7 @@ html {
 }
 
 .cards .text {
+  width: 277px;
   color: #666;
   font-size: 2rem;
   margin-top: -15px;
@@ -284,6 +296,7 @@ html {
 }
 
 .cards .price {
+  width: 277px;
   color: #666;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.9rem;
@@ -314,7 +327,8 @@ html {
 .cardheading p {
   font-size: 2rem;
 }
-.cardheading p span{
+
+.cardheading p span {
   color: #ff5151;
 }
 
@@ -427,6 +441,10 @@ html {
   }
 }
 
+.handle-btn {
+  margin-left: 58rem;
+}
+
 .product-detail h3 {
   text-transform: uppercase;
   margin-bottom: 2rem;
@@ -463,6 +481,10 @@ html {
 
 /* ------------ carosel start -------------- */
 
+.carosel{
+  margin-top: 7rem;
+}
+
 .carosel img {
   width: 574px !important;
   height: 551.6px !important;
@@ -486,16 +508,17 @@ html {
   font-size: 4rem;
 }
 
-.banner-texting {
+.carosel-texting {
   margin-top: 7rem;
+  margin-bottom: 7rem;
 }
 
-.banner-texting h3 {
+.carosel-texting h3 {
   text-align: center;
   font-size: 4rem;
 }
 
-.banner-texting p {
+.carosel-texting p {
   margin: 15px;
   font-size: 1.5rem;
   color: #666;
